@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lan ="en">
+    <html>
+        <head>
+            <title>Heart rate</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/harish.css">
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+            <script src="./js/heart.js"></script>
+            
+        </head>
+        <body>
+            <div id="wrapper">
+            <header>
+                <h1>FITNESS STUDIO</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="BMI.html">BMI Calculator</a></li>
+                    <li><a href="Heart rate.html">Heart rate</a></li>
+                    <li><a href="Calories.html">Calories</a></li>
+                    <li><a href="weight.html">Weight</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="road"></div>
+            <main>
+                <br><hr><br>
+                <P>Ever ask yourself, "How can I find my target heart rate?" Finding your target heart rate is easy with our target heart rate calculator. Target heart rate calculation can be determined for any age, enabling you to use a heart rate monitor and get the most benefit from your Health and fitness.</P>
+                
+                <div class="rate">
+                <form id="heartrate">
+                    <h3 class="heading">TARGET HEART RATE</h3>
+                    <hr class="line">
+                    <label>AGE in years (1-150):</label>
+                    <input style="width: 80px;" name="age" min="1" max="150" type="number" id="age">
+                    <br />     
+                    <input value="Calculate" id="MyButtons" type="submit">
+                    <hr class="line">
+                    <p class="hr"><b>Your Max Heart Rate Is:</b></p>
+                    <input id="result1" name="result1" disabled>
+                    <p class="heart">beats per minute</p>
+                    <hr class="line">
+                    <p class="hr"><b>Your Ideal Heart Rate:</b></p>
+                    <input id="result4" name="result4" disabled>
+                    <p class="heart">beats per minute</p>
+                    <hr class="line">
+                    <p class="hr"><b>Your Heart Rate Zone Is:</b></p>
+                    <input id="result2" name="result2" disabled>
+                    <p class="heart">beats per 10 seconds</p>
+                    <br>
+                    <input  id="result3" name="result3" disabled>
+                    <p class="heart">beats per minute</p>
+                    <input type="reset" value="Reset" />
+                </form>
+                </div>
+                
+                
+                <h4><span class="bold">Understanding your Target Heart Rate</span></h4>
+                <p>To identify your personal target heart rate zone, you must first calculate your maximum heart rate. The easiest way to calculate your maximum heart rate is by doing this simple subtraction equation:<strong> 220 – your age = your maximum heart rate.</strong></p>
+                <h4><span class="bold">How to Calculate Ideal Heart Rate</span></h4>
+                <p>Let’s use a 56-year old person as an example:</p>
+                <ul>
+                    <li>max heart rate = 220 – 56</li>
+                    <li>max heart rate = 164</li>
+                    <li>Ideal heart rate = max heart rate * .85</li>
+                    <li>Ideal heart rate = 164 * .85</li>
+                    <li>Ideal heart rate = 139(Approx.)</li>
+                </ul>
+                <h4><span class="bold">Understanding your Heart Rate Zone</span></h4>
+                <p>Your heart rate zone is calculated as a range of 50 to 85 percent of your maximum heart rate. Keeping your pulse within the target heart rate zone during an exercise allows you to receive maximum benefit.</p>
+
+            </main>
+            <footer>
+                Copyright &copy; FS | All rights reserved
+                <br>
+                <i><a href="mailto:naidu.harish1997@gmail.com">Email us</a></i><br>
+                <i><a href="tel:548-883-3344">Contact us</a></i>
+            </footer>
+            </div>
+        </body>
+    </html>

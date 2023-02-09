@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lan ="en">
+    <html>
+        <head>
+            <title>Weight</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/siva.css">
+            <script src="./js/weight.js"></script>
+        </head>
+        <body>
+            <div id="wrapper">
+            <header>
+                <h1>FITNESS STUDIO</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="BMI.html">BMI Calculator</a></li>
+                    <li><a href="Heart rate.html">Heart rate</a></li>
+                    <li><a href="Calories.html">Calories</a></li>
+                    <li><a href="weight.html">Weight</a></li>
+                     <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="Weight"></div>
+            <main id="calColour">
+                <div id="wborder1">
+                <h3 class>Ideal weight calculator</h3>
+                <form name="bmrform">
+                    <!--<h4 class="ch4">Gender</h4>-->
+                    <!--<label for="male">Male</label>-->
+                    <label for="gender">Gender</label>
+                    <input class="radio" type="radio" name="genders" id="cmale" value="1" checked>Male
+                    <!--<label for="female">Female</label>-->
+                    <input class="radio" type="radio" name="genders" id="cfemale" value="0">Female<br><br>
+                    <label>Height</label>
+                    <select id="feet">
+                        <option value="5">5</option>
+                        <option value="6">6</option><br>
+                        <option value="7">7</option><br>
+                        <option value="8">8</option><br>
+                    </select>
+                    <select id="inches">
+                        <option value="0">0</option>
+                        <option value="1">1</option><br>
+                        <option value="2">2</option><br>
+                        <option value="3">3</option><br>
+                        <option value="4">4</option><br>
+                        <option value="5">5</option><br>
+                        <option value="6">6</option><br>
+                        <option value="7">7</option><br>
+                        <option value="8">8</option><br>
+                        <option value="9">9</option><br>
+                        <option value="10">10</option><br>
+                        <option value="11">11</option><br>
+                    </select>
+                    <button class="wbutton" type="button" onclick="idealWeight()">Calculate</button>
+                    <button class="wbutton" type="button" onclick="clearWeight()">clear</button><br>
+                    <label for="Weight">Weight </label>
+                    <input type="text" name="Weight" id="weightCalculated" disabled><br>
+                </form></div>    
+                    <h4>Ideal Weight calculator?</h4>
+                    <p>The weight is calculated using D. R. Miller Formula<br>
+                        It gives the ideal weight based on gender and height 
+                    </p>
+            </main>
+            <footer>
+                Copyright &copy; FS | All rights reserved
+                <br>
+                <i><a href="mailto:vegesnasivaramaraju4@gmail.com">Email us</a></i><br>
+                <i><a href="tel:548-883-0333">Contact us</a></i>
+            </footer>
+            </div>
+        </body>
+    </html>

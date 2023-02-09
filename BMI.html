@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lan ="en">
+    <html>
+        <head>
+	<title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+        <body>
+            <div id="wrapper">
+            <header>
+                <h1>FITNESS STUDIO</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="BMI.html">BMI Calculator</a></li>
+                    <li><a href="Heart rate.html">Heart rate</a></li>
+                    <li><a href="Calories.html">Calories</a></li>
+                    <li><a href="weight.html">Weight</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+       
+           <div class="bmi bmi-box">
+		<h2 class="text-center">Check your BMI</h2>
+    		
+    			<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+    			
+    			<form>
+    				<div id="weightInput">
+    					<p>Put your weight in here (KG)</p>
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    				<div id="heightInput">
+    					<p>And your height in here (CM)</p>
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+    				</div>
+    		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+    		</form>
+    		<div id="results" class="text-center">Your BMI results will appear here</div>
+    	</div> 
+    <div class="gmi gmi-box">
+          <form name="resultform">
+              <h3>According to the World Health Organization (WHO):</h3>
+
+              <ul>
+                  <li>A BMI of less than 20.5 means that a person is underweight.</li>
+                  <li>A BMI of between 20.5 and 24.9 is ideal.</li>
+                  <li>A BMI of between 25 and 29.9 is overweight.</li>
+                  <li>A BMI over 30 indicates obesity.</li>
+              </ul>
+              <p>click here to view more</p>
+               <li><a href="Diet%20plan.html">how to improve your BMI level
+                   ?</a></li>
+              </form>
+          </div>
+            <div class="vmi vmi-box"> 
+                 <p>Here the Dr.Robert Bales,MD from Cleveland sharing some important information and tips about the body mass index and how to maintain healthy body weight.</p>
+             <div class="youtube" id="HeGGnClrG8I" style="width:540px; height: 315px;"></div>
+             </div>
+	<script src="./js/sashank.js"></script>
+                <footer>
+                Copyright &copy; FS | All rights reserved
+                <br>
+                <i><a href="mailto:sashankballa27@gmail.com">Email us</a></i><br>
+                <i><a href="tel:888-888-8888">Contact us</a></i>
+            </footer>
+    </div>
+            
+                </body>
+</html>

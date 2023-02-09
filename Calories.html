@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lan ="en">
+    <html>
+        <head>
+            <title>Calories</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/siva.css">
+            <script src="./js/calories.js"></script>
+        </head>
+        <body>
+            <div id="wrapper">
+            <header>
+                <h1>FITNESS STUDIO</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="BMI.html">BMI Calculator</a></li>
+                    <li><a href="Heart rate.html">Heart rate</a></li>
+                    <li><a href="Calories.html">Calories</a></li>
+                    <li><a href="weight.html">Weight</a></li>
+                     <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="cals"></div>
+            <main id="calColour">
+                <div id="cborder1">
+                <h3 class="ch3">Calories Calculator</h3>
+                <form name="bmrform">
+                    
+                    <label for="gender">Gender</label>
+                    <input class="radio" type="radio" name="genders" id="cmale" value="1" checked>Male
+                    <!--<label for="female">Female</label>-->
+                    <input class="radio" type="radio" name="genders" id="cfemale" value="0">Female<br><br>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="cage" placeholder="years"><br>
+                    <label for="Weight">Weight</label>
+                    <input type="number" name="Weight" id="cweight" placeholder="kgs"><br>
+                    <label for="Height">Height</label>
+                    <input type="number" name="Height" id="cheight" placeholder="cms"><br>
+                    <button class="cbutton" type="button" onclick="bmrcalculate()">calculate</button><br>
+                    <label for="bmr">Calories </label>
+                    <input type="text" name="bmr" id="bmr" disabled><br>
+                    <button class="cbutton" type="button" onclick="calClear()">Clear</button><br>
+                    
+                </form>
+                </div>
+                <div id="cborder2">
+                    <h3 class="ch3">Nutrients needed</h3>
+                    <form>
+                        <label for="need">Calories</label>
+                        <input type="number" name="need" id="need" placeholder="Your daily caloric need"><br>
+                        <button class="cbutton" type="button" onclick="nutrients()">calculate</button><br>
+                        <label for="Carbohydrates">Carbohydrates</label>
+                        <input type="text" name="Carbohydrates" id="Carbohydrates" disabled><br>
+                        <label for="Proteins">Proteins</label>
+                        <input type="text" name="Proteins" id="Proteins" disabled><br>
+                        <label for="Fats">Fats</label>
+                        <input type="Carbohydrates" name="Fats" id="Fats" disabled><br>
+                        <button class="cbutton" type="button" onclick="calClear1()">Clear</button><br>
+                    </form>
+                    </div>
+                    <h4>Got Your Calculated Nutritional Needs?</h4>
+                    <p>Knowing the amount of fats,carbohydrates and proteins
+                        required by the body will help us in preparing the balenced meals</p>
+                    <h4>Calorie calculator</h4>
+                    <p>The daily calorie requirements are calculated using Mifflin-St Jeor Equation</p>
+            </main>
+            <footer>
+                Copyright &copy; FS | All rights reserved
+                <br>
+                <i><a href="mailto:vegesnasivaramaraju4@gmail.com">Email us</a></i><br>
+                <i><a href="tel:548-883-0333">Contact us</a></i>
+            </footer>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lan ="en">
+    <html>
+        <head>
+            <title>FITNESS STUDIO</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./css/harish.css">
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+            <script src="./js/contact.js"></script>
+        </head>
+        <body>
+            <div id="wrapper">
+            <header>
+                <h1>FITNESS STUDIO</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="BMI.html">BMI Calculator</a></li>
+                    <li><a href="Heart rate.html">Heart rate</a></li>
+                    <li><a href="Calories.html">Calories</a></li>
+                    <li><a href="weight.html">Weight</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main>
+               <h2>Contact Us</h2>
+                <h4>Have any quiries or having any problem with calculations. Please enter your details and write the probelm occured to you in the comments section and submit the form. We will respond to you shortly. Thank you.</h4>
+                <form name="contact" onsubmit="return validateform()">
+                    <label for="firstname">*First Name:</label>
+                    <input type="text" name="firstname" id="firstname" ><span>&nbsp;</span>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname"><span>&nbsp;</span>
+                    <label for="email">*E-mail:</label>
+                    <input type="email" name="email" id="email" ><span>&nbsp;</span>
+                    <label for="phone">*Phone:</label>
+                    <input type="tel" name="phone" id="phone" ><span>&nbsp;</span>
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" rows="10" cols="30" id="comments" ></textarea>
+                    <input type="submit" name="submit" id="submit" value="submit">
+                </form>
+            </main>
+            <footer>
+                Copyright &copy; FS | All rights reserved
+                <br>
+                <i><a href="mailto:FS@gmail.com">FS@gmail.com</a></i><br>
+                <i><a href="tel:888-888-8888">Call</a></i>
+            </footer>
+            </div>
+        </body>
+    </html>
